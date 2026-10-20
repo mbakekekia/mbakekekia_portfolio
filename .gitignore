@@ -1,0 +1,10 @@
+# Compiled server binary
+server
+*.o
+
+# Runtime data (contains visitor messages and emails, keep private)
+data/
+
+# OS clutter
+.DS_Store
+Thumbs.db

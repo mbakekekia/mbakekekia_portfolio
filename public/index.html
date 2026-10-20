@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mbake Kekia: ICT student at the University of Kentucky focused on web development, networking, and cybersecurity.">
+  <title>Mbake Kekia | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="logo">mbake<span>.dev</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+            <span class="theme-icon">&#9790;</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <p class="hero-kicker mono">$ whoami</p>
+        <h1 class="hero-title">Hi, I'm <span class="accent">Mbake Kekia</span>.</h1>
+        <h2 class="hero-sub">
+          I'm a <span class="typed mono" id="typed"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-text">
+          Information Communication Technology senior at the University of Kentucky,
+          graduating December 2026. I build websites, tinker with networks, and
+          work toward a career in cybersecurity.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono accent">01.</span> About me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I come to tech from a creative direction. My background in Media Arts
+              and Studies and a minor in Theatre taught me how to tell a story and
+              how to put the audience first. Now I apply that same thinking to the
+              systems people use every day.
+            </p>
+            <p>
+              At FoodChain Lexington, a community food nonprofit, I worked across web
+              development, SEO, social media analytics, and content production. These
+              days I'm deep into networking and security: studying for CompTIA A+,
+              running containers in my homelab, and building out a cybersecurity
+              portfolio.
+            </p>
+            <p>
+              This site itself is one of my projects. The front end is HTML, CSS,
+              and JavaScript, and it is served by a web server I wrote from scratch
+              in C.
+            </p>
+          </div>
+          <div class="about-card reveal">
+            <div class="terminal">
+              <div class="terminal-bar"><span></span><span></span><span></span></div>
+              <pre class="mono"><code><span class="t-key">student</span> = {
+  <span class="t-prop">school</span>: <span class="t-str">"University of Kentucky"</span>,
+  <span class="t-prop">major</span>: <span class="t-str">"ICT"</span>,
+  <span class="t-prop">minor</span>: <span class="t-str">"Theatre"</span>,
+  <span class="t-prop">grad</span>: <span class="t-str">"Dec 2026"</span>,
+  <span class="t-prop">focus</span>: [<span class="t-str">"web"</span>, <span class="t-str">"networks"</span>, <span class="t-str">"security"</span>]
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono accent">02.</span> Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Web Development</h3>
+            <div class="skill-bar" data-level="90"><span>HTML &amp; CSS</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="75"><span>JavaScript</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="80"><span>WordPress / Divi</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="65"><span>Hugo</span><div class="bar"><div class="fill"></div></div></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Systems &amp; Networking</h3>
+            <div class="skill-bar" data-level="70"><span>Networking fundamentals</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="65"><span>Docker &amp; Portainer</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="60"><span>Linux</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="55"><span>C programming</span><div class="bar"><div class="fill"></div></div></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Content &amp; Marketing</h3>
+            <div class="skill-bar" data-level="85"><span>Content production</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="75"><span>SEO</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="75"><span>Social media analytics</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="85"><span>Storytelling</span><div class="bar"><div class="fill"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono accent">03.</span> Projects</h2>
+
+        <div class="filters reveal" id="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="security">Security</button>
+          <button class="filter" data-filter="networking">Networking</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card reveal" data-category="web networking">
+            <div class="project-top"><span class="mono">server.c</span><span class="tag">C</span></div>
+            <h3>This Portfolio + C Web Server</h3>
+            <p>A hand-written HTTP server in C using POSIX sockets. It serves static files, blocks path traversal, counts visits, and stores contact form messages.</p>
+            <ul class="tech"><li>C</li><li>Sockets</li><li>HTTP</li><li>JavaScript</li></ul>
+          </article>
+
+          <article class="project-card reveal" data-category="security networking">
+            <div class="project-top"><span class="mono">homelab/</span><span class="tag">Docker</span></div>
+            <h3>Docker &amp; Portainer Homelab</h3>
+            <p>A containerized lab managed through Portainer, used to deploy, isolate, and monitor services as part of my cybersecurity portfolio.</p>
+            <ul class="tech"><li>Docker</li><li>Portainer</li><li>Linux</li></ul>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-top"><span class="mono">foodchain/</span><span class="tag">Nonprofit</span></div>
+            <h3>FoodChain Lexington</h3>
+            <p>Internship work for a community food nonprofit covering website updates, SEO improvements, social analytics, and community storytelling content.</p>
+            <ul class="tech"><li>WordPress</li><li>SEO</li><li>Analytics</li></ul>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-top"><span class="mono">ict302/</span><span class="tag">Team</span></div>
+            <h3>Hugo Group Website</h3>
+            <p>Served as technical lead on a group static site built with Hugo, handling structure, theming, and helping teammates contribute content.</p>
+            <ul class="tech"><li>Hugo</li><li>Markdown</li><li>Git</li></ul>
+          </article>
+
+          <article class="project-card reveal" data-category="networking">
+            <div class="project-top"><span class="mono">ict390/</span><span class="tag">Research</span></div>
+            <h3>Network Measurement Project</h3>
+            <p>Collected and analyzed real network performance data for my Introduction to Networking Technologies course.</p>
+            <ul class="tech"><li>Networking</li><li>Data analysis</li></ul>
+          </article>
+
+          <article class="project-card reveal" data-category="security">
+            <div class="project-top"><span class="mono">next/</span><span class="tag">In progress</span></div>
+            <h3>More Security Projects</h3>
+            <p>Additional cybersecurity portfolio projects are on the way as I move from A+ toward Network+, Linux, and red and blue team work.</p>
+            <ul class="tech"><li>CompTIA</li><li>Security</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono accent">04.</span> Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="timeline-date mono">Expected Dec 2026</span>
+            <h3>BA, Information Communication Technology</h3>
+            <p class="timeline-org">University of Kentucky</p>
+            <p>Coursework in networking, web development, and information systems, with a Theatre minor and a Media Arts and Studies background.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-date mono">Internship</span>
+            <h3>Digital Media &amp; Web Intern</h3>
+            <p class="timeline-org">FoodChain Lexington</p>
+            <p>Web development, SEO, social media analytics, content production, and community storytelling for a local food nonprofit.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-date mono">Ongoing</span>
+            <h3>Freelance Web Developer &amp; Content Creator</h3>
+            <p class="timeline-org">Self-employed</p>
+            <p>Building websites and producing content for clients and my own channels.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container contact-wrap">
+        <h2 class="section-title reveal"><span class="mono accent">05.</span> Contact</h2>
+        <p class="contact-intro reveal">
+          Looking for an IT, web, or security role starting after December 2026.
+          Send a message here or email me at
+          <a href="mailto:mke287@uky.edu">mke287@uky.edu</a>.
+        </p>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" maxlength="100" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" maxlength="150" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" maxlength="2000" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Send message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Mbake Kekia. Served by a C web server.</p>
+      <p class="mono visits">visitors: <span id="visitCount">...</span></p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
