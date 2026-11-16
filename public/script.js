@@ -154,7 +154,11 @@
   fetch("/api/visits", { method: "POST" })
     .then((r) => (r.ok ? r.json() : Promise.reject()))
     .then((data) => { $("#visitCount").textContent = data.visits; })
-    .catch(() => { $("#visitCount").textContent = "offline"; });
+    .catch(() => {
+      /* No C backend (static hosting such as GitHub Pages): hide the counter */
+      const v = $("#visitCount");
+      if (v && v.parentElement) v.parentElement.style.display = "none";
+    });
 
   /* ---------- Contact form (validated here, stored by the C backend) ---------- */
   const form = $("#contactForm");
@@ -202,7 +206,11 @@
       setStatus("Thanks! Your message was received. I'll get back to you soon.", "ok");
       form.reset();
     } catch (err) {
-      setStatus("Something went wrong. Please email me directly at mke287@uky.edu.", "err");
+      /* No C backend (static hosting): open the visitor's email app instead */
+      const subject = encodeURIComponent("Portfolio message from " + fields.name);
+      const body = encodeURIComponent(fields.message + "\n\nFrom: " + fields.name + " (" + fields.email + ")");
+      window.location.href = "mailto:mke287@uky.edu?subject=" + subject + "&body=" + body;
+      setStatus("Opening your email app. If nothing happens, email me at mke287@uky.edu.", "ok");
     } finally {
       submitBtn.disabled = false;
     }
